@@ -2,13 +2,31 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { NavBarComponent } from './componentes/nav-bar/nav-bar.component';
+import { FooterComponent } from './componentes/footer/footer.component';
+import { AboutComponent } from './componentes/paginas/about/about.component';
+import { BlogComponent } from './componentes/paginas/blog/blog.component';
+import { MainComponent } from './componentes/paginas/main/main.component';
+import { AppRoutingModule } from './app-routing.module';
+import { ContactoComponent } from './componentes/paginas/contacto/contacto.component';
+import { MasonComponent } from './componentes/paginas/mason/mason.component';
+import {  HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavBarComponent,
+    FooterComponent,
+    AboutComponent,
+    BlogComponent,
+    MainComponent,
+    ContactoComponent,
+    MasonComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
